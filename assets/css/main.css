@@ -168,3 +168,7 @@ header, footer { display: block }
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+
+blockquote footer {
+	margin-top: 0.5em;
+}
