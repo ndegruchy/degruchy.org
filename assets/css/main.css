@@ -194,3 +194,7 @@ header, footer { display: block }
 blockquote footer {
 	margin-top: 0.5em;
 }
+
+.h-feed > li a {
+    text-decoration: italic;
+}
