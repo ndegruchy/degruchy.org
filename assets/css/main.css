@@ -195,6 +195,6 @@ blockquote footer {
 	margin-top: 0.5em;
 }
 
-.h-feed > li a {
+.h-feed > .h-item {
     text-decoration: italic;
 }
