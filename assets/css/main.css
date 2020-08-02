@@ -138,7 +138,7 @@ p a, li a {
 	background-repeat: repeat-x;
 	background-size: 2px 2px;
 	color: var(--persian-green);
-	padding: 0 3px;
+	padding: 2px 3px;
 	text-decoration: none;
 	transition: background-size .2s, color 0.2s;
 }
@@ -171,7 +171,7 @@ header, footer { display: block }
 	margin-bottom: 2em;
 }
 #masthead nav a {
-	color: white;
+	color: var(--isabelline);
 	display: inline-block;
 	font-size: 1.5rem;
 	line-height: 3rem;
