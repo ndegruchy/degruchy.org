@@ -204,6 +204,6 @@ blockquote footer {
 	margin-top: 0.5em;
 }
 
-.h-feed .h-item {
+#articles > ul > li > a {
     font-style: italic;
 }
