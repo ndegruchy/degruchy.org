@@ -2,6 +2,8 @@
 *.temp.css
 main.min.css
 
+_drafts
+
 # Created by https://www.toptal.com/developers/gitignore/api/emacs,sass
 # Edit at https://www.toptal.com/developers/gitignore?templates=emacs,sass
 
