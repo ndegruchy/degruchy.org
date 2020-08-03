@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Verily - DeGruchy.org</title>
+  <link>https://degruchy.org/</link>
+  <description>Nathan's (Old) Blog</description>
+  <item>
+    <title>This feed has moved!</title>
+    <link>https://micro.degruchy.org/</link>
+    <author>nathan@degruchy.org</author>
+    <description>This feed has moved to Micro.blog, please follow me there!</description>
+  </item>
+</channel>
+
+</rss>
