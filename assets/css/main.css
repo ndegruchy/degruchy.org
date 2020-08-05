@@ -176,7 +176,7 @@ header, footer { display: block }
 	border-radius: 5px;
 	display: grid;
 	grid-row-gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
 	margin-bottom: 2em;
 }
 #masthead nav a {
