@@ -1,6 +1,6 @@
 # -*- mode: gitignore; -*-
 *.temp.css
-main.min.css
+*.min.css
 .envrc
 _drafts
 
