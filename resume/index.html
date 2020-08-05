@@ -19,10 +19,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8"/>
+	<!-- <base href="https://degruchy.org/"> -->
+
 	<title>Resume of Nathan DeGruchy</title>
 
 	<meta name="description" content="Nathan's completely awesome resume, in web form.">
-    <base href="https://degruchy.org/">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Verily at DeGruchy.org - Home of Nathan DeGruchy">
 	<meta property="og:site_name" content="Verily">
@@ -44,35 +45,40 @@
 	<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
-	<link rel="stylesheet" href="/assets/css/resume.min.css">
+	<link rel="stylesheet" href="../assets/css/resume.css">
 
 	<!-- Mobile viewport handling -->
 	<meta name="viewport" content="width=device-width">
 
 	<!--
 		Look at you reading the source of my resume. Nothing special
-		to see here. Basic Bootstrap website, feather icons[1] instead of
-		glyphicons. Layout matches closely to my modern-cv resume.
-
-		[1]: https://github.com/colebemis/feather
+		to see here.
 	-->
 </head>
 <body>
 	<div id="back">
 		<a href="/"><span class="icon-reply"></span> Back to Verily</a>
 	</div>
-	<header id="masthead">
-		<h1>Nathan DeGruchy
-			<small>Web Systems &amp; Support Specialist</small>
-		</h1>
-		<ul class="personal">
-			<li><a href="tel:+19047189979"><span class="icon-speech-bubble"></span>(904) 718-9979</a></li>
-			<li><a href="mailto:nathan@degruchy.org"><span class="icon-mail"></span>nathan@degruchy.org</a></li>
-			<li><a href="http://degruchy.org/"><span class="icon-globe"></span>http://degruchy.org/</a></li>
-			<li><a href="http://linkedin.com/in/ndegruchy"><span class="icon-briefcase"></span>LinkedIn</a></li>
-			<li><a href="/assets/files/ndegruchy-resume.pdf"><span class="icon-paper"></span>Download a copy (PDF)</a></li>
-		</ul>
-	</header>
+	<section id="masthead">
+		<header>
+			<h1>Nathan DeGruchy
+				<small>Web Systems &amp; Support Specialist</small>
+			</h1>
+			<ul>
+				<li><a href="tel:+19047189979"><span class="icon-speech-bubble"></span>(904) 718-9979</a></li>
+				<li><a href="mailto:nathan@degruchy.org"><span class="icon-mail"></span>nathan@degruchy.org</a></li>
+				<li><a href="http://degruchy.org/"><span class="icon-globe"></span>http://degruchy.org/</a></li>
+				<li><a href="http://linkedin.com/in/ndegruchy"><span class="icon-briefcase"></span>LinkedIn</a></li>
+				<li><a href="/assets/files/ndegruchy-resume.pdf"><span class="icon-paper"></span>Download a copy (PDF)</a></li>
+			</ul>
+			<img
+				alt="My logo/face"
+				src="../assets/images/me.svg"
+				height="96"
+				width="96"
+			>
+		</header>
+	</section>
 	<main>
 		<section id="summary">
 			<header><h2>Summary</h2></header>
@@ -87,8 +93,6 @@
 					<li>Drupal</li>
 					<li>WordPress</li>
 					<li>Responsive Design</li>
-				</ul>
-				<ul>
 					<li>JavaScript</li>
 					<li>jQuery</li>
 					<li>SharePoint</li>
@@ -98,13 +102,15 @@
 		</section>
 		<section id="computer-skills">
 			<header><h2>Computer Skills</h2></header>
-			<div>
+            <section id="oses">
 				<h3>Operating Systems</h3>
 				<ul>
 					<li>Windows</li>
 					<li>MacOS</li>
 					<li>GNU/Linux</li>
 				</ul>
+            </section>
+            <section id="office">
 				<h3>Office Software</h3>
 				<ul>
 					<li>Microsoft Office 2010&ndash;2016</li>
@@ -112,8 +118,8 @@
 					<li>SharePoint</li>
 					<li>InfoPath</li>
 				</ul>
-			</div>
-			<div>
+            </section>
+            <section id="programming">
 				<h3>Programming Languages</h3>
 				<ul>
 					<li>PHP</li>
@@ -125,6 +131,8 @@
 					<li>CSS3</li>
 					<li>Bootstrap</li>
 				</ul>
+            </section>
+            <section id="server">
 				<h3>Server Software</h3>
 				<ul>
 					<li>Windows Server</li>
@@ -133,8 +141,8 @@
 					<li>IIS</li>
 					<li>MySQL</li>
 				</ul>
-			</div>
-			<div>
+            </section>
+            <section id="webapps">
 				<h3>Web Applications</h3>
 				<ul>
 					<li>Drupal</li>
@@ -142,7 +150,7 @@
 					<li>SharePoint</li>
 					<li>MediaWiki</li>
 				</ul>
-			</div>
+            </section>
 		</section>
 		<section id="experience">
 			<header><h2>Experience</h2></header>
