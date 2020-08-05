@@ -1,7 +1,7 @@
 # -*- mode: gitignore; -*-
 *.temp.css
 main.min.css
-
+.envrc
 _drafts
 
 # Created by https://www.toptal.com/developers/gitignore/api/emacs,sass
