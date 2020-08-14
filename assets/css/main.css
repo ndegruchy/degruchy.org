@@ -186,7 +186,6 @@ header, footer { display: block }
 	line-height: 3rem;
 	min-height: 3rem;
 	text-align: center;
-	vertical-align: middle;
 }
 #masthead nav a:hover {
 	background-color: var(--skobeloff);
