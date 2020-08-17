@@ -64,4 +64,3 @@ flycheck_*.el
 *.scss.map
 
 # End of https://www.toptal.com/developers/gitignore/api/emacs,sass
-assets/css/main.min.css
