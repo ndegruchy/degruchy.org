@@ -1,0 +1,18 @@
+version: '3'
+
+tasks:
+  minify:
+    cmds:
+      - minify -o assets/css/main.min.css assets/css/normalize.min.css assets/css/main.css
+    sources:
+      - assets/css/normalize.min.css
+      - assets/css/main.css
+    generates:
+      - assets/css/main.min.css
+
+  upload:
+    - rsync -avh "." "nathan@degruchy.org:/var/www/degruchy.org/" --delete --filter="- .git" --filter="- Makefile" --filter="- Taskfile.yml" --filter="P blog/" --filter="- assets/css/normalize*" --filter="- assets/css/resume*" --filter="- assets/css/main.css" --filter="- LICENSE.txt" --filter="- README.md" --filter="- .task" --delete-excluded
+
+  default:
+    - task: minify
+    - task: upload
