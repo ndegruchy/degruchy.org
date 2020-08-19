@@ -1,0 +1,18 @@
+#+TITLE: IndieWeb Items
+#+SUBTITLE: A collection of IndieWeb Related Items
+#+AUTHOR: Nathan DeGruchy
+#+DATE: 2020-08-19 09:21:58
+#+Time-stamp: <2020-08-19 09:23:23 nathan>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.min.css">
+#+HTML_HEAD: <link rel="icon" type="image/svg" href="https://degruchy.org/assets/images/me.svg">
+#+HTML_DOCTYPE: html5
+#+OPTIONS: html-style:nil
+#+OPTIONS: email:t f:t toc:t
+
+* IndieWeb
+
+** TODO Itches
+  Here is where I will mark my "itches"; A list of tasks I'd like to
+  complete or work on regarding my web presence. I may actually spin
+  it out in to a separate, linked, document for organization purposes.
+
