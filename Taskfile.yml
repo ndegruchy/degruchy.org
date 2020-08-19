@@ -11,7 +11,7 @@ tasks:
       - assets/css/main.min.css
 
   upload:
-    - rsync -avh "." "nathan@degruchy.org:/var/www/degruchy.org/" --delete --filter="- .git" --filter="- Makefile" --filter="- Taskfile.yml" --filter="P blog/" --filter="- assets/css/normalize*" --filter="- assets/css/resume*" --filter="- assets/css/main.css" --filter="- LICENSE.txt" --filter="- README.md" --filter="- .task" --recursive --delete-excluded
+    - rsync -avh "." "nathan@degruchy.org:/var/www/degruchy.org/" --delete --filter="- .git" --filter="- Makefile" --filter="- Taskfile.yml" --filter="P blog/" --filter="- assets/css/normalize*" --filter="- assets/css/resume*" --filter="- assets/css/main.css" --filter="- LICENSE.txt" --filter="- README.md" --filter="- .task" --delete-excluded
 
   default:
     - task: minify
