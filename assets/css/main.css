@@ -99,13 +99,13 @@
 
 
 :root {
-	--burnt-sienna: #E76F51;
-	--charcoal: #264653;
-	--isabelline: #F7F6F2;
-	--orange-crayola: #E9C46A;
-	--persian-green: #2A9D8F;
-	--sandy-brown: #F4A261;
-	--skobeloff: #287271;
+	--burnt-sienna:   rgb(231, 111, 81);
+	--charcoal:       rgb(38, 70, 83);
+	--isabelline:     rgb(247, 246, 242);
+	--orange-crayola: rgb(233, 196, 106);
+	--persian-green:  rgb(42, 157, 143);
+	--sandy-brown:    rgb(244, 162, 97);
+	--skobeloff:      rgb(40, 114, 113);
 }
 
 ::selection {
@@ -122,16 +122,15 @@ body {
 	background-color: var(--isabelline);
 	font-size: 1.25rem;
 	line-height: 2.1rem;
-	padding-bottom: 2em;
-	padding: 0 10vw;
+	padding: 0 10vw 2em 10vw;
 }
 
 code {
-	background-color: #ddd;
-	border-radius: 5px;
-	border: 1px solid #aaa;
-	font-family: "Fira Mono", "Hack", monospace;
-	padding: 3px;
+	background-color: rgb(221, 221, 221);
+	border-radius:    5px;
+	border:           1px solid rgb(170, 170, 170);
+	font-family:      "Fira Mono", "Hack", monospace;
+	padding:          3px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -139,12 +138,16 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: "Noto Serif", serif;
 }
 
+:is(h1, h2, h3, h4, h5, h6) a,
+:-webkit-any(h1,h2,h3,h4,h5,h6) a,
+:matches(h1,h2,h3,h4,h5,h6) a {
+	padding: 0.5rem;
+}
+
 a { color: var(--persian-green); }
 
 p a, li a {
-	background: linear-gradient(to bottom, var(--charcoal) 0%, var(--charcoal) 100%);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
+	background:      linear-gradient(to bottom, var(--charcoal) 0%, var(--charcoal) 100%) repeat-x 0 100%;
 	background-size: 2px 2px;
 	color: var(--persian-green);
 	padding: 2px 3px;
@@ -172,12 +175,14 @@ header, footer { display: block }
 	text-align: center;
 }
 #masthead nav {
-	background-color: var(--charcoal);
-	border-radius: 5px;
-	display: grid;
-	grid-row-gap: 1rem;
+	background-color:      var(--charcoal);
+	border-radius:         5px;
+	display:               grid;
+	/*noinspection CssBrowserCompatibilityForProperties*/
+	grid-row-gap:          1rem;
+	/*noinspection CssBrowserCompatibilityForProperties*/
 	grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-	margin-bottom: 2em;
+	margin-bottom:         2em;
 }
 #masthead nav a {
 	color: var(--isabelline);
