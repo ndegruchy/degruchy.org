@@ -3,9 +3,9 @@ version: '3'
 tasks:
   minify:
     cmds:
-      - minify -o assets/css/main.min.css assets/css/normalize.min.css assets/css/main.css
+      - minify -o assets/css/main.min.css assets/css/normalize.css assets/css/main.css
     sources:
-      - assets/css/normalize.min.css
+      - assets/css/normalize.css
       - assets/css/main.css
     generates:
       - assets/css/main.min.css
