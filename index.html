@@ -7,7 +7,132 @@
 		<meta name="description" content="Nathan's little plot of virtual land on the Internet.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="/assets/images/me.svg">
-		<link href="/assets/css/main.min.css" rel="stylesheet">
+
+		<style>
+			:root {
+				--burnt-sienna: rgb(231, 111, 81);
+				--charcoal: rgb(38, 70, 83);
+				--isabelline: rgb(247, 246, 242);
+				--orange-crayola: rgb(233, 196, 106);
+				--persian-green: rgb(42, 157, 143);
+				--sandy-brown: rgb(244, 162, 97);
+				--skobeloff: rgb(40, 114, 113);
+			}
+
+			::selection {
+				background-color: var(--charcoal);
+				color: var(--isabelline);
+			}
+
+			* {
+				box-sizing: border-box;
+				font-family: "Noto Sans", sans-serif;
+			}
+
+			html {
+				line-height: 1.15; /* 1 */
+				-webkit-text-size-adjust: 100%; /* 2 */
+			}
+
+			body {
+				background-color: var(--isabelline);
+				font-size: 1.25rem;
+				line-height: 2.1rem;
+				margin: 0;
+				padding: 0 10vw 2em 10vw;
+			}
+
+			code {
+				background-color: rgb(221, 221, 221);
+				border-radius:    5px;
+				border:           1px solid rgb(170, 170, 170);
+				font-family:      "Fira Mono", "Hack", monospace;
+				padding:          3px;
+			}
+
+			h1 {
+				font-size: 2em;
+				margin: 0.67em 0;
+			}
+
+			h1,h2,h3,h4,h5,h6 {
+				color: var(--charcoal);
+				font-family: "Noto Serif", serif;
+			}
+
+			:is(h1,h2,h3,h4,h5,h6) em {	font-family: "Noto Serif", serif; }
+			:is(h1,h2,h3,h4,h5,h6) a { margin-left: 0.5rem; }
+
+			a { color: var(--persian-green); }
+
+			p a, li a {
+				background: linear-gradient(to bottom, var(--charcoal) 0%, var(--charcoal) 100%) repeat-x 0 100%;
+				background-size: 2px 2px;
+				color: var(--persian-green);
+				padding: 2px 3px;
+				text-decoration: none;
+				transition: background-size .2s, color 0.2s;
+			}
+
+			p a:hover, li a:hover {
+				background-size: 4px 50px;
+				color: var(--isabelline);
+			}
+
+			header, footer { display: block }
+
+			#masthead {
+				margin-bottom: 1.5em;
+			}
+			#masthead img {
+				display: block;
+				height: 300px;
+				margin: 0 auto 1em auto;
+				width: 300px;
+			}
+			#masthead h1 {
+				font-size: 2.5rem;
+				line-height: 3rem;
+				text-align: center;
+			}
+			#masthead nav {
+				background-color:      var(--charcoal);
+				border-radius:         5px;
+				display:               grid;
+				/*noinspection CssBrowserCompatibilityForProperties*/
+				grid-row-gap:          1rem;
+				/*noinspection CssBrowserCompatibilityForProperties*/
+				grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+				margin-bottom:         2em;
+			}
+			#masthead nav a {
+				color: var(--isabelline);
+				display: inline-block;
+				font-size: 1.5rem;
+				line-height: 3rem;
+				min-height: 3rem;
+				text-align: center;
+			}
+			#masthead nav a:hover {
+				background-color: var(--skobeloff);
+			}
+			#masthead nav a:first-child {
+				border-bottom-left-radius: 5px;
+				border-top-left-radius: 5px;
+			}
+			#masthead nav a:last-child {
+				border-bottom-right-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+
+			blockquote footer {
+				margin-top: 0.5em;
+			}
+
+			#articles > ul > li > a {
+				font-style: italic;
+			}
+		</style>
 
 		<!-- # Litany Against Fear
 			 
