@@ -5,8 +5,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Noto Sans'), local('NotoSans'),
-       url('/assets/fonts/noto-sans-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-sans-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-sans-v9-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-sans-700 - latin */
@@ -16,8 +15,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('Noto Sans Bold'), local('NotoSans-Bold'),
-       url('/assets/fonts/noto-sans-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-sans-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-sans-v9-latin-700.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-sans-italic - latin */
@@ -27,8 +25,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Noto Sans Italic'), local('NotoSans-Italic'),
-       url('/assets/fonts/noto-sans-v9-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-sans-v9-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-sans-v9-latin-italic.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-sans-700italic - latin */
@@ -38,8 +35,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'),
-       url('/assets/fonts/noto-sans-v9-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-sans-v9-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-sans-v9-latin-700italic.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-serif-regular - latin */
@@ -49,8 +45,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Noto Serif'), local('NotoSerif'),
-       url('/assets/fonts/noto-serif-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-serif-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-serif-v8-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-serif-700 - latin */
@@ -60,8 +55,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
-       url('/assets/fonts/noto-serif-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-serif-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-serif-v8-latin-700.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-serif-italic - latin */
@@ -71,8 +65,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
-       url('/assets/fonts/noto-serif-v8-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-serif-v8-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-serif-v8-latin-italic.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* noto-serif-700italic - latin */
@@ -82,8 +75,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'),
-       url('/assets/fonts/noto-serif-v8-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/noto-serif-v8-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/noto-serif-v8-latin-700italic.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 /* fira-mono-regular - latin */
@@ -93,8 +85,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('Fira Mono Regular'), local('FiraMono-Regular'),
-       url('/assets/fonts/fira-mono-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/fira-mono-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/assets/fonts/fira-mono-v8-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 
@@ -138,20 +129,8 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: "Noto Serif", serif;
 }
 
-:is(h1, h2, h3, h4, h5, h6) a {
-	margin-left: 0.5rem;
-}
-
-/**
- * Has to be duplicated, otherwise Firefox
- * barfs on the extra selector :(
- * Also - webkit is retarded with this...
- */
-:-webkit-any(h1,h2,h3,h4,h5,h6) a,
-:-matches (h1,h2,h3,h4,h5,h6) a,
-:-moz-any(h1,h2,h3,h4,h5,h6) a {
-	margin-left: 0.5rem;
-}
+:is(h1,h2,h3,h4,h5,h6) em {	font-family: "Noto Serif", serif; }
+:is(h1,h2,h3,h4,h5,h6) a { margin-left: 0.5rem; }
 
 a { color: var(--persian-green); }
 
