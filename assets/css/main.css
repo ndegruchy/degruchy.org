@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6 {
 a { color: var(--persian-green); }
 
 p a, li a {
-	background:      linear-gradient(to bottom, var(--charcoal) 0%, var(--charcoal) 100%) repeat-x 0 100%;
+	background: linear-gradient(to bottom, var(--charcoal) 0%, var(--charcoal) 100%) repeat-x 0 100%;
 	background-size: 2px 2px;
 	color: var(--persian-green);
 	padding: 2px 3px;
