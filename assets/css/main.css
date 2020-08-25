@@ -138,10 +138,16 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: "Noto Serif", serif;
 }
 
-:is(h1, h2, h3, h4, h5, h6) a,
-:-webkit-any(h1,h2,h3,h4,h5,h6) a,
-:matches(h1,h2,h3,h4,h5,h6) a {
-	padding: 0.5rem;
+:is(h1, h2, h3, h4, h5, h6) a {
+	margin-left: 0.5rem;
+}
+
+/**
+ * Has to be duplicated, otherwise Firefox
+ * barfs on the extra selector :(
+ */
+:-webkit-matches(h1,h2,h3,h4,h5,h6) a {
+	margin-left: 0.5rem;
 }
 
 a { color: var(--persian-green); }
