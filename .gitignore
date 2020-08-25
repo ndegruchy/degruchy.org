@@ -4,64 +4,12 @@
 .envrc
 _drafts
 
-# Created by https://www.toptal.com/developers/gitignore/api/emacs,sass
-# Edit at https://www.toptal.com/developers/gitignore?templates=emacs,sass
-
 ### Emacs ###
 *~
 \#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
 
-# Org-mode
-.org-id-locations
-*_archive
+# Task runner
+/.task/
 
-# flymake-mode
-*_flymake.*
-
-# eshell files
-/eshell/history
-/eshell/lastdir
-
-# elpa packages
-/elpa/
-
-# reftex files
-*.rel
-
-# AUCTeX auto folder
-/auto/
-
-# cask packages
-.cask/
-dist/
-
-# Flycheck
-flycheck_*.el
-
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
-
-# directory configuration
-.dir-locals.el
-
-# network security
-/network-security.data
-
-
-### Sass ###
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-
-# End of https://www.toptal.com/developers/gitignore/api/emacs,sass
-/.task/checksum/minify
+# WebStorm
+/.idea/
