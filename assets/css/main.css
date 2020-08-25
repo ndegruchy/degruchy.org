@@ -148,7 +148,8 @@ h1,h2,h3,h4,h5,h6 {
  * Also - webkit is retarded with this...
  */
 :-webkit-any(h1,h2,h3,h4,h5,h6) a,
-:-matches (h1,h2,h3,h4,h5,h6) a {
+:-matches (h1,h2,h3,h4,h5,h6) a,
+:-moz-any(h1,h2,h3,h4,h5,h6) a {
 	margin-left: 0.5rem;
 }
 
