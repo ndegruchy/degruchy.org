@@ -1,8 +1,0 @@
-version: '3'
-
-tasks:
-  upload:
-    - rsync -avh "." "nathan@degruchy.org:/var/www/degruchy.org/" --delete --filter="- .git" --filter="- Taskfile.yml" --filter="P assets/images/misc" --filter="- assets/css/main.css" --filter="- .gitignore" --filter="- .idea" --filter="- README.md" --filter="- .task" --delete-excluded
-
-  default:
-    - task: upload
