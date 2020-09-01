@@ -63,6 +63,7 @@
 		 }
 
 		 a {
+			 border-radius: 5px;
 			 color: var(--persian-green);
 		 }
 
@@ -137,9 +138,19 @@
 			 margin-top: 0.5em;
 		 }
 
-		 #articles > ul > li > a {
-			 font-style: italic;
+		 #articles .article {
+			 border-bottom: 1px solid var(--charcoal);
 		 }
+		 .article header h3 {
+			 margin-bottom: 0.5rem;
+		 }
+		 .article header p {
+			 margin-top: 0.5rem;
+		 }
+		 .article .content p {
+			 text-align: justify;
+		 }
+
 		 footer+p {
 			 text-align: center;
 		 }
@@ -169,6 +180,11 @@
 					href="#about-me"
 					title="Jump to the about me section">
 					About Me
+				</a>
+                <a
+					href="#articles"
+					title="Jump to the articles section">
+					Articles
 				</a>
 				<a
 					href="#elsewhere"
@@ -259,6 +275,42 @@
 					You also won't find a RSS/ATOM/JSON feed of my work anymore. I'm done with it, if you want to hear my opinions or thoughts, ask me. Otherwise, I'm done maintaining <a href="/blog/">my void shouty machine</a>.
 				</p>
 			</section>
+            <section id="articles" class="h-feed hfeed">
+                <header>
+                    <h2>
+                        Articles
+                        <a href="#articles">#</a>
+                        <a href="#top" title="Jump to top">^</a>
+                    </h2>
+                </header>
+				<!--
+					 Emmet shortcode for generating an article
+					 article#article-foo.h-entry>header>h3.p-name{Title}>a+a^time.dt-published^section.content.e-content+footer.article-comments>p>a
+				-->
+                <article id="article-testing" class="h-entry article">
+                    <header>
+                        <h3 class="p-name">
+                            Testing This Thing
+                            <a href="#article-testing">#</a>
+                            <a href="#top" title="Jump to top">^</a>
+                        </h3>
+                        <p>Posted: <time class="dt-published" datetime="2020-09-01T08:43:15-04:00">2020-09-01 08:31:24</time></p>
+                    </header>
+                    <section class="content e-content">
+                        <p>
+							Gonna give this a bit of an
+							experiment. Posting longer form thoughts
+							here instead of trying to shove them all
+							into a 500-char toot on Mastodon.
+						</p>
+                    </section>
+                    <footer class="article-comments">
+                        <p>
+							<a href="mailto:nathan@degruchy.org">Comment</a>
+						</p>
+                    </footer>
+                </article>
+            </section>
 		</main>
 		<footer id="colophon">
 			<h2>
