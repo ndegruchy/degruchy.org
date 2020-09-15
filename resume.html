@@ -30,7 +30,6 @@
     <link rel="preconnect" href="//g.degruchy.org">
     <link rel="dns-prefetch" href="//g.degruchy.org">
 
-	
 	<!-- Mobile viewport handling -->
 	<meta name="viewport" content="width=device-width">
 
@@ -85,9 +84,9 @@
 		 flex-grow: 2;
 	 }
 	 #masthead h1 small {
-		 margin-top: 0.5em;
 		 display: block;
 		 font-size: 0.5em;
+		 margin-top: 0.5em;
 	 }
 	 
 	 #masthead ul {
@@ -114,12 +113,13 @@
 
 	 #computer-skills,
 	 #certifications {
-		 display: grid;
-		 grid-template-columns: repeat(3, 0.5fr);
+		 display: flex;
+		 flex-wrap: wrap;
+		 justify-content: space-between;
 	 }
 	 #computer-skills header,
 	 #certifications header {
-		 grid-column: span 4;
+		 width: 100%;
 	 }	 
     </style>
 	
@@ -127,9 +127,9 @@
 </head>
 <body class="h-resume">
 	<div id="back"><a href="/"><span class="icon-reply"></span> Back to Verily</a></div>
-	<header id="masthead p-contact h-card">
-		<h1 class="p-name">Nathan DeGruchy</h1>
-		<h2>Web Systems &amp; Support Specialist</h2>
+	<header id="masthead" class="p-contact h-card">
+		<h1 class="p-name">Nathan DeGruchy
+        <small>Support Specialist and Web Developer</small></h1>
 		<ul>
 			<li><a href="tel:+19047189979">(904) 718-9979</a></li>
 			<li><a href="mailto:nathan@degruchy.org">nathan@degruchy.org</a></li>
@@ -168,6 +168,8 @@
 					<li>MacOS</li>
 					<li>GNU/Linux</li>
 				</ul>
+			</div>
+			<div>
 				<h3>Office Software</h3>
 				<ul>
 					<li>Microsoft Office 2010&ndash;2016</li>
@@ -177,17 +179,6 @@
 				</ul>
 			</div>
 			<div>
-				<h3>Programming Languages</h3>
-				<ul>
-					<li>PHP</li>
-					<li>HTML5</li>
-					<li>JavaScript</li>
-					<li>Shell</li>
-					<li>jQuery</li>
-					<li>Coffeescript</li>
-					<li>CSS3</li>
-					<li>Bootstrap</li>
-				</ul>
 				<h3>Server Software</h3>
 				<ul>
 					<li>Windows Server</li>
@@ -204,6 +195,16 @@
 					<li>WordPress/MU</li>
 					<li>SharePoint</li>
 					<li>MediaWiki</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Programming Languages</h3>
+				<ul>
+					<li>PHP</li>
+					<li>HTML5</li>
+					<li>JavaScript</li>
+					<li>Shell</li>
+					<li>CSS3</li>
 				</ul>
 			</div>
 		</section>
