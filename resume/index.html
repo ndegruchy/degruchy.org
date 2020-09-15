@@ -138,9 +138,14 @@
 
 	 @media only screen and (max-device-width: 938px) {
 		 #masthead h1,
-		 #masthead ul li{
+		 #masthead ul {
 			 text-align: center;
+			 padding-left: 0;
 		 }
+	 }
+	 @media only print {
+		 a, a:hover, a:active, a:visited { text-decoration: none }
+		 #back, #masthead ul li:last-child { display: none }
 	 }
     </style>
 	
