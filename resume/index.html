@@ -68,11 +68,18 @@
 
 	 #back { text-align: center }
 	 #back a { display: block }
-	 
-	 #masthead {
+
+	 #masthead,
+	 #summary ul,
+	 #computer-skills,
+	 #certifications {
 		 display: flex;
 		 flex-direction: row;
 		 flex-wrap: wrap;
+	 }
+	 
+	 
+	 #masthead {
 		 justify-content: flex-start;
 		 align-items: stretch;
 		 min-height: 150px;
@@ -111,10 +118,19 @@
 		 content: "\01F454";
 	 }
 
+	 #summary ul {
+		 justify-content: space-between;
+		 max-height: 10vh
+		 padding-left: 1em;
+		 margin: 0 5vw;
+	 }
+	 #summary ul li {
+		 width: 250px;
+		 white-space: nowrap;
+	 }
+	 
 	 #computer-skills,
 	 #certifications {
-		 display: flex;
-		 flex-wrap: wrap;
 		 justify-content: space-between;
 	 }
 	 #computer-skills header,
