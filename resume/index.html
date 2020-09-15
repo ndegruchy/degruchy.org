@@ -24,16 +24,16 @@
 	<meta name="description" content="Nathan's Resume.">
 	<link rel="license"   href="/LICENSE.txt">
 	<link rel="icon"      href="/assets/images/me.webp" type="image/webp">
-    <link rel="canonical" href="https://degruchy.org/">
+	<link rel="canonical" href="https://degruchy.org/">
 
 	<!-- Preload stats site -->
-    <link rel="preconnect" href="//g.degruchy.org">
-    <link rel="dns-prefetch" href="//g.degruchy.org">
+	<link rel="preconnect" href="//g.degruchy.org">
+	<link rel="dns-prefetch" href="//g.degruchy.org">
 
 	<!-- Mobile viewport handling -->
 	<meta name="viewport" content="width=device-width">
 
-    <style>
+	<style>
 	 :root {
 		 --text: #000;
 		 --linkfg: #14213D;
@@ -62,7 +62,6 @@
 	 a:visited,
 	 a:active,
 	 a:hover {
-		 border-radius: 5px;
 		 color: var(--linkfg);
 	 }
 
@@ -81,7 +80,6 @@
 
 	 #masthead {
 		 align-items: stretch;
-		 min-height: 150px;
 		 margin-bottom: 1.5em;
 	 }
 
@@ -94,7 +92,7 @@
 		 font-size: 0.5em;
 		 margin-top: 0.5em;
 	 }
-	 
+
 	 #masthead ul {
 		 font-size: 0.75em;
 		 text-align: right;
@@ -118,22 +116,28 @@
 	 }
 
 	 #summary ul {
-		 max-height: 10vh
-		 padding-left: 1em;
+		 padding-left: 0;
 		 margin: 0 5vw;
 	 }
 	 #summary ul li {
-		 width: 250px;
+		 list-style-type: none;
+		 min-width: 250px;
+		 max-width: 20%;
 		 white-space: nowrap;
 	 }
-	 
+
 	 #computer-skills header,
 	 #certifications header {
 		 width: 100%;
 	 }
-	 #computer-skills div,
+	 #computer-skills div {
+		 min-width: 200px;
+		 max-width: 20%;
+	 }
+	 
 	 #certifications div {
-		 width: 250px;
+		 min-width: 200px;
+		 max-width: 15%;
 	 }
 
 	 @media only screen and (max-device-width: 938px) {
@@ -144,18 +148,23 @@
 		 }
 	 }
 	 @media only print {
+		 body { margin: 0; padding: 0; font-size: 1rem }
+
 		 a, a:hover, a:active, a:visited { text-decoration: none }
-		 #back, #masthead ul li:last-child { display: none }
+
+		 #back,
+		 #masthead ul li:nth-child(4),
+		 #masthead ul li:last-child { display: none }
 	 }
-    </style>
-	
+	</style>
+
 	<!-- Look at you reading the source of my resume. Nothing special here. -->
 </head>
 <body class="h-resume">
 	<div id="back"><a href="/"><span class="icon-reply"></span> Back to Verily</a></div>
 	<header id="masthead" class="p-contact h-card">
 		<h1 class="p-name">Nathan DeGruchy
-        <small>Support Specialist and Web Developer</small></h1>
+		<small>Support Specialist and Web Developer</small></h1>
 		<ul>
 			<li><a href="tel:+19047189979">(904) 718-9979</a></li>
 			<li><a href="mailto:nathan@degruchy.org">nathan@degruchy.org</a></li>
@@ -174,13 +183,15 @@
 				Expertise in:</p>
 			<div>
 				<ul>
-					<li>LAMP</li>
+					<li>Desktop Support</li>
+					<li>"White Glove" Support</li>
 					<li>Drupal</li>
 					<li>WordPress</li>
 					<li>Responsive Design</li>
 					<li>JavaScript</li>
-					<li>jQuery</li>
 					<li>SharePoint</li>
+					<li>Windows</li>
+					<li>Linux</li>
 					<li>MacOS X</li>
 				</ul>
 			</div>
@@ -418,6 +429,6 @@
 	</main>
 	<script data-goatcounter="//g.degruchy.org/count" async src="//g.degruchy.org/count.js"></script>
 	<script>window.goatcounter={path: function(p){return location.host + p}}</script>
-    <noscript><img src="//g.degruchy.org/count?p=/test-img"></noscript>
+	<noscript><img src="//g.degruchy.org/count?p=/test-img"></noscript>
 </body>
 </html>
