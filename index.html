@@ -60,7 +60,10 @@
 		 }
 
 		 :is(h1, h2, h3, h4, h5, h6) a {
-			 margin-left: 0.5rem;
+			 color: var(--charcoal);
+		 }
+		 :is(h1, h2, h3, h4, h5, h6) a:hover:after {
+			 content: " #";
 		 }
 
 		 a {
@@ -192,15 +195,14 @@
 				I have a pretty nice <a href="/resume/">Resume</a>, if you're interested in my professional work.
 			</p>
 			<p>
-				<small>Need to encrypt something to me? Use <a href="/assets/files/ndegruchy.pgp" rel="me pgpkey authn">my public key</a>.</small>
+				<small>Need to encrypt something to me? Use <a id="pgp" href="/assets/files/ndegruchy.pgp" rel="me pgpkey authn">my public key</a>.</small>
 			</p>
 		</section>
 		<main>
 			<section id="about-me">
 				<header>
 					<h2>
-						About Me
-						<a href="#about-me">#</a> <a href="#" title="Jump to Top">^</a>
+						<a href="#about-me">About Me</a>
 					</h2>
 				</header>
 				<blockquote class="p-note">
@@ -219,8 +221,7 @@
 			<section id="elsewhere">
 				<header>
 					<h2>
-						Elsewhere On the Internet
-						<a href="#elsewhere">#</a> <a href="#" title="Jump to Top">^</a>
+						<a href="#elsewhere">Elsewhere On the Internet</a>
 					</h2>
 				</header>
 				<p>
@@ -256,8 +257,7 @@
 					You can also find me on <code>irc.freenode.net</code> as <code>ndegruchy</code>.
 				</p>
 				<h3 id="not">
-					Where <em>Not</em> to Find Me
-					<a href="#not">#</a><a href="#top" title="Jump to top">^</a>
+					<a href="#not">Where <em>Not</em> to Find Me</a>
 				</h3>
 				<p>
 					I prefer to avoid closed social silos, like Twitter, Facebook, Instagram, <em>anywhere</em> on Google et al. Though, strangely, I still have a LinkedIn account&hellip;
@@ -269,8 +269,7 @@
 		</main>
 		<footer id="colophon">
 			<h2>
-				Colophon
-				<a href="#colophon">#</a> <a href="#" title="Jump to Top">^</a>
+				<a href="#colophon">Colophon</a>
 			</h2>
 			<p>
 				Made in an afternoon, in Emacs with at least two cups of coffee in me.
