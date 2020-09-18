@@ -21,7 +21,7 @@
 			 --dark-grey: rgb(170, 170, 170);
 			 --light-grey: rgb(221, 221, 221);
 			 box-sizing: border-box;
-			 font-family: "Noto Sans", sans-serif;
+			 font-family: sans-serif;
 		 }
 
 		 ::selection {
@@ -29,9 +29,7 @@
 			 color: var(--isabelline);
 		 }
 
-		 html {
-			 line-height: 1.15;
-		 }
+		 html { line-height: 1.15 }
 
 		 body {
 			 background-color: var(--isabelline);
@@ -45,7 +43,7 @@
 			 background-color: var(--light-grey);
 			 border-radius: 5px;
 			 border: 1px solid var(--dark-grey);
-			 font-family: "Fira Mono", "Hack", monospace;
+			 font-family: monospace;
 			 padding: 3px;
 		 }
 
@@ -56,15 +54,11 @@
 
 		 h1, h2, h3, h4, h5, h6 {
 			 color: var(--charcoal);
-			 font-family: "Noto Serif", serif;
+			 font-family: serif;
 		 }
 
-		 :is(h1, h2, h3, h4, h5, h6) a {
-			 color: var(--charcoal);
-		 }
-		 :is(h1, h2, h3, h4, h5, h6) a:hover:after {
-			 content: " #";
-		 }
+		 :is(h1, h2, h3, h4, h5, h6) a { color: var(--charcoal) }
+		 :is(h1, h2, h3, h4, h5, h6) a:hover:after { content: " #" }
 
 		 p a, li a {
 			 border-radius: 5px;
@@ -81,15 +75,8 @@
 			 color: var(--isabelline);
 		 }
 
-		 header, footer {
-			 display: block
-		 }
+		 #masthead { margin-bottom: 1.5em }
 
-		 #masthead {
-			 margin-bottom: 1.5em;
-		 }
-
-		 #masthead svg,
 		 #masthead img {
 			 display: block;
 			 height: 300px;
@@ -120,9 +107,7 @@
 			 text-align: center;
 		 }
 
-		 #masthead nav a:hover {
-			 background-color: var(--skobeloff);
-		 }
+		 #masthead nav a:hover { background-color: var(--skobeloff) }
 
 		 #masthead nav a:first-child {
 			 border-bottom-left-radius: 5px;
@@ -134,13 +119,9 @@
 			 border-top-right-radius: 5px;
 		 }
 
-		 blockquote footer {
-			 margin-top: 0.5em;
-		 }
+		 blockquote footer { margin-top: 0.5em }
 
-		 footer+p {
-			 text-align: center;
-		 }
+		 footer+p { text-align: center }
 		</style>
 
 		<!-- # Litany Against Fear
