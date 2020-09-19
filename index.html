@@ -25,36 +25,33 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<base href="https://degruchy.org/">
+<!--	<base href="https://degruchy.org/">-->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Nathan's little plot of virtual land on the Internet.">
 	<link rel="license" href="/LICENSE.txt">
-	<link rel="icon" href="/assets/images/me.webp" type="image/webp">
+	<link rel="icon" href="/assets/images/ndegruchy-new-300.webp" type="image/webp">
 	<link rel="canonical" href="https://degruchy.org/">
 
 	<style>
 		:root {
-			--burnt-sienna: rgb(231, 111, 81);
-			--charcoal: rgb(38, 70, 83);
-			--isabelline: rgb(247, 246, 242);
-			--orange-crayola: rgb(233, 196, 106);
-			--persian-green: rgb(42, 157, 143);
-			--sandy-brown: rgb(244, 162, 97);
-			--skobeloff: rgb(40, 114, 113);
+			--background-color: rgb(0, 48, 73);
+			--fg-color: rgb(255, 252, 232);
+			--link-fg: var(--fg-color);
 			--dark-grey: rgb(170, 170, 170);
 			--light-grey: rgb(221, 221, 221);
+			background-color: var(--background-color);
 			box-sizing: border-box;
+			color: var(--fg-color);
 			font-family: sans-serif;
 		}
 
 		::selection {
-			background-color: var(--charcoal);
-			color: var(--isabelline);
+			background-color: var(--fg-color);
+			color: var(--background-color);
 		}
 
 		body {
-			background-color: var(--isabelline);
 			font-size: 1.25rem;
 			line-height: 2.1rem;
 			margin: 0;
@@ -63,8 +60,8 @@
 
 		code {
 			background-color: var(--light-grey);
-			border-radius: 5px;
 			border: 1px solid var(--dark-grey);
+			color: var(--background-color);
 			font-family: monospace;
 			padding: 3px;
 		}
@@ -75,38 +72,34 @@
 		}
 
 		h1, h2, h3, h4, h5, h6 {
-			color: var(--charcoal);
 			font-family: serif;
 		}
 
-		:is(h1, h2, h3, h4, h5, h6) a {
-			color: var(--charcoal)
-		}
-
 		:is(h1, h2, h3, h4, h5, h6) a:hover:after {
-			content: " #"
+			content: " #";
 		}
 
-		p a, li a {
-			border-radius: 5px;
-			background: linear-gradient(to bottom, var(--charcoal) 0%, var(--charcoal) 100%) repeat-x 0 100%;
+		a {
+			background: linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
 			background-size: 2px 2px;
-			color: var(--persian-green);
+			color: var(--link-fg);
 			padding: 2px 3px;
 			text-decoration: none;
 			transition: background-size .2s, color 0.2s;
 		}
 
-		p a:hover, li a:hover {
+		a:hover {
 			background-size: 4px 50px;
-			color: var(--isabelline);
+			color: var(--background-color);
 		}
 
 		#masthead {
-			margin-bottom: 1.5em
+			margin-bottom: 1.5em;
 		}
 
 		#masthead img {
+			border: 3px solid var(--fg-color);
+			border-radius: 50%;
 			display: block;
 			height: 300px;
 			margin: 0 auto 1em auto;
@@ -119,8 +112,9 @@
 		}
 
 		#masthead nav {
-			background-color: var(--charcoal);
-			border-radius: 5px;
+			border-bottom: 2px solid var(--fg-color);
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
 			display: grid;
 			grid-row-gap: 1rem;
 			grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
@@ -128,16 +122,11 @@
 		}
 
 		#masthead nav a {
-			color: var(--isabelline);
 			display: inline-block;
 			font-size: 1.5rem;
 			line-height: 3rem;
 			min-height: 3rem;
 			text-align: center;
-		}
-
-		#masthead nav a:hover {
-			background-color: var(--skobeloff)
 		}
 
 		#masthead nav a:first-child {
@@ -151,11 +140,11 @@
 		}
 
 		blockquote footer {
-			margin-top: 0.5em
+			margin-top: 0.5em;
 		}
 
 		footer + p {
-			text-align: center
+			text-align: center;
 		}
 	</style>
 
@@ -176,7 +165,7 @@
 <section id="masthead">
 	<header>
 		<h1>Hello There!</h1>
-		<img alt="Me/My Logo" src="/assets/images/me-lg.webp" height="300" class="u-logo u-photo">
+		<img alt="Me/My Logo" src="assets/images/ndegruchy-new-300.webp" height="300" class="u-logo u-photo">
 	</header>
 	<nav>
 		<a href="#about-me" title="Jump to the about me section">
