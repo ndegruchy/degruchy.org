@@ -36,12 +36,14 @@
 	<style>
 		:root {
 			/* --background-color: rgb(0, 48, 73); */
-			--background-color: rgb(0,49,83);
-			--fg-color: rgb(255, 252, 232);
+			--prussian-blue: rgb(0,49,83);
+			--cosmic-latte: rgb(255, 252, 232);
+			--bg-color: var(--cosmic-latte);
+			--fg-color: var(--prussian-blue);
 			--link-fg: var(--fg-color);
 			--dark-grey: rgb(170, 170, 170);
 			--light-grey: rgb(221, 221, 221);
-			background-color: var(--background-color);
+			background-color: var(--bg-color);
 			box-sizing: border-box;
 			color: var(--fg-color);
 			font-family: sans-serif;
@@ -49,7 +51,7 @@
 
 		::selection {
 			background-color: var(--fg-color);
-			color: var(--background-color);
+			color: var(--bg-color);
 		}
 
 		body {
@@ -62,7 +64,7 @@
 		code {
 			background-color: var(--light-grey);
 			border: 1px solid var(--dark-grey);
-			color: var(--background-color);
+			color: var(--bg-color);
 			font-family: monospace;
 			padding: 3px;
 		}
@@ -91,7 +93,7 @@
 
 		a:hover {
 			background-size: 4px 50px;
-			color: var(--background-color);
+			color: var(--bg-color);
 		}
 
 		#masthead {
@@ -99,7 +101,7 @@
 		}
 
 		#masthead img {
-			border: 3px solid var(--fg-color);
+			border: 3px solid #FFF;
 			border-radius: 50%;
 			display: block;
 			height: 300px;
@@ -146,6 +148,13 @@
 
 		footer + p {
 			text-align: center;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--fg-color: var(--cosmic-latte);
+				--bg-color: var(--prussian-blue);
+			}
 		}
 	</style>
 
@@ -252,7 +261,8 @@
 	</p>
 </footer>
 <p>
-	<a href="//xn--sr8hvo.ws/%F0%9F%8D%A1%F0%9F%94%BA%F0%9F%90%AB/previous">&larr;</a> An IndieWeb Webring &#x1F578;&#x1F48D;
+	<a href="//xn--sr8hvo.ws/%F0%9F%8D%A1%F0%9F%94%BA%F0%9F%90%AB/previous">&larr;</a>
+	An IndieWeb Webring &#x1F578;&#x1F48D;
 	<a href="//xn--sr8hvo.ws/%F0%9F%8D%A1%F0%9F%94%BA%F0%9F%90%AB/next">&rarr;</a>
 </p>
 </body>
