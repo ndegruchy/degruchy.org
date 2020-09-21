@@ -39,42 +39,42 @@
 		 * request.
 		 */
 		:root {
-			--prussian-blue: rgb(0,49,83);
-			--cosmic-latte: rgb(255, 252, 232);
-			--bg-color: var(--cosmic-latte);
-			--fg-color: var(--prussian-blue);
-			--link-fg: var(--fg-color);
-			--dark-grey: rgb(170, 170, 170);
-			--light-grey: rgb(221, 221, 221);
+			--prussian-blue:  rgb(0, 49, 83);
+			--cosmic-latte:   rgb(255, 252, 232);
+			--bg-color:       var(--cosmic-latte);
+			--fg-color:       var(--prussian-blue);
+			--link-fg:        var(--fg-color);
+			--dark-grey:      rgb(170, 170, 170);
+			--light-grey:     rgb(221, 221, 221);
 			background-color: var(--bg-color);
-			box-sizing: border-box;
-			color: var(--fg-color);
-			font-family: sans-serif;
+			box-sizing:       border-box;
+			color:            var(--fg-color);
+			font-family:      sans-serif;
 		}
 
 		::selection {
 			background-color: var(--fg-color);
-			color: var(--bg-color);
+			color:            var(--bg-color);
 		}
 
 		body {
-			font-size: 1.25rem;
+			font-size:   1.25rem;
 			line-height: 2.1rem;
-			margin: 0;
-			padding: 0 10vw 2em 10vw;
+			margin:      0;
+			padding:     0 10vw 2em 10vw;
 		}
 
 		code {
 			background-color: var(--light-grey);
-			border: 1px solid var(--dark-grey);
-			color: var(--prussian-blue);
-			font-family: monospace;
-			padding: 3px;
+			border:           1px solid var(--dark-grey);
+			color:            var(--prussian-blue);
+			font-family:      monospace;
+			padding:          3px;
 		}
 
 		h1 {
 			font-size: 2em;
-			margin: 0.67em 0;
+			margin:    0.67em 0;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
@@ -86,17 +86,17 @@
 		}
 
 		a {
-			background: linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
+			background:      linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
 			background-size: 2px 2px;
-			color: var(--link-fg);
-			padding: 2px 3px;
+			color:           var(--link-fg);
+			padding:         2px 3px;
 			text-decoration: none;
-			transition: background-size .2s, color 0.2s;
+			transition:      background-size .2s, color 0.2s;
 		}
 
 		a:hover {
 			background-size: 4px 50px;
-			color: var(--bg-color);
+			color:           var(--bg-color);
 		}
 
 		#masthead {
@@ -104,45 +104,45 @@
 		}
 
 		#masthead img {
-			border: 3px solid #FFF;
+			border:        3px solid #fff;
 			border-radius: 50%;
-			display: block;
-			height: 300px;
-			margin: 0 auto 1em auto;
+			display:       block;
+			height:        300px;
+			margin:        0 auto 1em auto;
 		}
 
 		#masthead h1 {
-			font-size: 2.5rem;
+			font-size:   2.5rem;
 			line-height: 3rem;
-			text-align: center;
+			text-align:  center;
 		}
 
 		#masthead nav {
-			border-bottom: 2px solid var(--fg-color);
-			border-bottom-left-radius: 5px;
+			border-bottom:              2px solid var(--fg-color);
+			border-bottom-left-radius:  5px;
 			border-bottom-right-radius: 5px;
-			display: grid;
-			grid-row-gap: 1rem;
+			display:                    grid;
+			grid-row-gap:               1rem;
 			grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-			margin-bottom: 2em;
+			margin-bottom:              2em;
 		}
 
 		#masthead nav a {
-			display: inline-block;
-			font-size: 1.5rem;
+			display:     inline-block;
+			font-size:   1.5rem;
 			line-height: 3rem;
-			min-height: 3rem;
-			text-align: center;
+			min-height:  3rem;
+			text-align:  center;
 		}
 
 		#masthead nav a:first-child {
 			border-bottom-left-radius: 5px;
-			border-top-left-radius: 5px;
+			border-top-left-radius:    5px;
 		}
 
 		#masthead nav a:last-child {
 			border-bottom-right-radius: 5px;
-			border-top-right-radius: 5px;
+			border-top-right-radius:    5px;
 		}
 
 		blockquote footer {
@@ -159,6 +159,7 @@
 				--bg-color: var(--prussian-blue);
 			}
 		}
+
 		@media (prefers-reduced-motion: reduce) {
 			a { transition: none; }
 		}
@@ -199,7 +200,8 @@
 		you have any questions or comments about, well, pretty much anything.
 	</p>
 	<p>
-		<small>Need to encrypt something to me? Use <a id="pgp" href="/assets/files/ndegruchy.pgp" rel="me pgpkey authn">my public key</a>.</small>
+		<small>Need to encrypt something to me? Use <a id="pgp" href="/assets/files/ndegruchy.pgp"
+		                                               rel="me pgpkey authn">my public key</a>.</small>
 	</p>
 </section>
 <main>
@@ -262,7 +264,9 @@
 		<small>Apparently, "colophon" is some maker text usually at the bottom of a paper or end of a book. Huh.</small>
 	</p>
 	<p>
-		If you find any bugs or issues with this site, feel free to <a href="mailto:nathan@degruchy.org?subject=Problem%20with%20the%20website&body=Hey%2C%0D%0A%0D%0AI've%20found%20a%20problem%20with%20your%20website!%0D%0A%0D%0AHere%20are%20the%20details%3A%0D%0A%0D%0A--%20Thanks!">email me</a>.
+		If you find any bugs or issues with this site, feel free to <a
+			href="mailto:nathan@degruchy.org?subject=Problem%20with%20the%20website&body=Hey%2C%0D%0A%0D%0AI've%20found%20a%20problem%20with%20your%20website!%0D%0A%0D%0AHere%20are%20the%20details%3A%0D%0A%0D%0A--%20Thanks!">email
+		me</a>.
 	</p>
 </footer>
 <p>
