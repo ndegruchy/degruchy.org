@@ -39,42 +39,41 @@
 		 * request.
 		 */
 		:root {
-			--prussian-blue:  rgb(0, 49, 83);
-			--cosmic-latte:   rgb(255, 252, 232);
-			--bg-color:       var(--cosmic-latte);
-			--fg-color:       var(--prussian-blue);
-			--link-fg:        var(--fg-color);
-			--dark-grey:      rgb(170, 170, 170);
-			--light-grey:     rgb(221, 221, 221);
+			--prussian-blue: rgb(0, 49, 83);
+			--cosmic-latte: rgb(255, 252, 232);
+			--bg-color: var(--prussian-blue);
+			--fg-color: var(--cosmic-latte);
+			--dark-grey: rgb(170, 170, 170);
+			--light-grey: rgb(221, 221, 221);
 			background-color: var(--bg-color);
-			box-sizing:       border-box;
-			color:            var(--fg-color);
-			font-family:      sans-serif;
+			box-sizing: border-box;
+			color: var(--fg-color);
+			font-family: sans-serif;
 		}
 
 		::selection {
 			background-color: var(--fg-color);
-			color:            var(--bg-color);
+			color: var(--bg-color);
 		}
 
 		body {
-			font-size:   1.25rem;
+			font-size: 1.25rem;
 			line-height: 2.1rem;
-			margin:      0;
-			padding:     0 10vw 2em 10vw;
+			margin: 0;
+			padding: 0 10vw 2em 10vw;
 		}
 
 		code {
 			background-color: var(--light-grey);
-			border:           1px solid var(--dark-grey);
-			color:            var(--prussian-blue);
-			font-family:      monospace;
-			padding:          3px;
+			border: 1px solid var(--dark-grey);
+			color: var(--prussian-blue);
+			font-family: monospace;
+			padding: 3px;
 		}
 
 		h1 {
 			font-size: 2em;
-			margin:    0.67em 0;
+			margin: 0.67em 0;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
@@ -86,63 +85,35 @@
 		}
 
 		a {
-			background:      linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
+			background: linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
 			background-size: 2px 2px;
-			color:           var(--link-fg);
-			padding:         2px 3px;
+			color: var(--fg-color);
+			padding: 2px 3px;
 			text-decoration: none;
-			transition:      background-size .2s, color 0.2s;
+			transition: background-size .2s, color 0.2s;
 		}
 
 		a:hover {
 			background-size: 4px 50px;
-			color:           var(--bg-color);
+			color: var(--bg-color);
 		}
 
-		#masthead {
+	 	#masthead {
 			margin-bottom: 1.5em;
 		}
 
 		#masthead img {
-			border:        3px solid #fff;
+			border: 3px solid #fff;
 			border-radius: 50%;
-			display:       block;
-			height:        300px;
-			margin:        0 auto 1em auto;
+			display: block;
+			height: 300px;
+			margin: 0 auto 1em auto;
 		}
 
 		#masthead h1 {
-			font-size:   2.5rem;
+			font-size: 2.5rem;
 			line-height: 3rem;
-			text-align:  center;
-		}
-
-		#masthead nav {
-			border-bottom:              2px solid var(--fg-color);
-			border-bottom-left-radius:  5px;
-			border-bottom-right-radius: 5px;
-			display:                    grid;
-			grid-row-gap:               1rem;
-			grid-template-columns:      repeat(auto-fit, minmax(175px, 1fr));
-			margin-bottom:              2em;
-		}
-
-		#masthead nav a {
-			display:     inline-block;
-			font-size:   1.5rem;
-			line-height: 3rem;
-			min-height:  3rem;
-			text-align:  center;
-		}
-
-		#masthead nav a:first-child {
-			border-bottom-left-radius: 5px;
-			border-top-left-radius:    5px;
-		}
-
-		#masthead nav a:last-child {
-			border-bottom-right-radius: 5px;
-			border-top-right-radius:    5px;
+			text-align: center;
 		}
 
 		blockquote footer {
@@ -151,13 +122,6 @@
 
 		footer + p {
 			text-align: center;
-		}
-
-		@media (prefers-color-scheme: dark) {
-			:root {
-				--fg-color: var(--cosmic-latte);
-				--bg-color: var(--prussian-blue);
-			}
 		}
 
 		@media (prefers-reduced-motion: reduce) {
@@ -184,14 +148,6 @@
 		<h1>Hello There!</h1>
 		<img alt="Me/My Logo" src="/assets/images/ndegruchy-new-300.webp" height="300" class="u-logo u-photo">
 	</header>
-	<nav>
-		<a href="#about-me" title="Jump to the about me section">
-			About Me
-		</a>
-		<a href="#elsewhere" title="Jump to the other sites section">
-			Elsewhere
-		</a>
-	</nav>
 	<p class="p-note">
 		Hello, I'm <span class="u-name"><span class="u-given-name">Nathan</span> <span
 			class="u-family-name">DeGruchy</span></span>. <a href="//degruchy.org" class="u-url u-uid">This is my little
