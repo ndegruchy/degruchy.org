@@ -1,6 +1,5 @@
-==============
- DeGruchy.org
-==============
+DeGruchy.org
+============
 
 This is my new static, `IndieWeb`_-ified landing page for
 everything else in my life. I've collected as much as was important
