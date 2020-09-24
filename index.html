@@ -47,12 +47,12 @@
 		 * request.
 		 */
 		:root {
-			--prussian-blue: rgb(0, 49, 83);
-			--cosmic-latte: rgb(255, 252, 232);
 			--bg-color: var(--prussian-blue);
-			--fg-color: var(--cosmic-latte);
+			--cosmic-latte: rgb(255, 252, 232);
 			--dark-grey: rgb(170, 170, 170);
+			--fg-color: var(--cosmic-latte);
 			--light-grey: rgb(221, 221, 221);
+			--prussian-blue: rgb(0, 49, 83);
 			background-color: var(--bg-color);
 			box-sizing: border-box;
 			color: var(--fg-color);
@@ -93,8 +93,8 @@
 		}
 
 		a {
-			background: linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
 			background-size: 2px 2px;
+			background: linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
 			color: var(--fg-color);
 			padding: 2px 3px;
 			text-decoration: none;
@@ -111,8 +111,8 @@
 		}
 
 		#masthead img {
-			border: 3px solid #fff;
 			border-radius: 50%;
+			border: 3px solid #fff;
 			display: block;
 			height: 300px;
 			margin: 0 auto 1em auto;
