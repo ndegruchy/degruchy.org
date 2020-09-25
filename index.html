@@ -81,19 +81,8 @@
 		}
 
 		a {
-			/* 
-				Setting background-size as a separate property here. I
-				don't really *want* to, but it seems to cause the
-				"wrong thing"(tm) to happen. It also needs to be in
-				this order, so the background-size is applied after
-				the general background property.
-			*/
-			background: linear-gradient(to bottom, var(--fg-color) 0%, var(--fg-color) 100%) repeat-x 0 100%;
-			background-size: 2px 2px;
 			color: var(--fg-color);
 			padding: 2px 3px;
-			text-decoration: none;
-			transition: background-size .2s, color 0.2s;
 		}
 
 		a:hover {
@@ -122,10 +111,6 @@
 
 		blockquote footer {
 			margin-top: 0.5em;
-		}
-
-		@media (prefers-reduced-motion: reduce) {
-			a { transition: none; }
 		}
 	</style>
 
