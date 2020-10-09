@@ -88,6 +88,17 @@
 			width: 300px;
 		}
 
+		summary {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+		details figcaption {
+			line-height: 1rem;
+			font-size: smaller;
+			font-style: italic;
+		}
+	 	figure { margin: 1rem 0; }
+
 		blockquote footer { margin-top: 0.5em }
 	</style>
 
@@ -114,9 +125,6 @@
 		<p class="p-note">
 			Hello, &#x1F44B; I'm <span class="u-name"><span class="u-given-name">Nathan</span> <span class="u-family-name">DeGruchy</span></span>. <a href="//degruchy.org" class="u-url u-uid">This is my little plot of virtual land on the Internet</a>. Here you'll find out various bits about me, what I've done and where I frequent. You can feel free <a href="mailto:nathan@degruchy.org" class="u-email">to email me</a> at any time if you have any questions or comments about, well, pretty much anything.
 		</p>
-		<p>
-			Need to encrypt something to me? Use <a id="pgp" href="/assets/files/ndegruchy.pgp" rel="me pgpkey authn">my public key</a>.
-		</p>
 	</section>
 	<main>
 		<section id="about-me">
@@ -132,13 +140,16 @@
 			<p>
 				Yes, that about does it. I'm kind of an interesting guy in my estimation. I do work that requires me to be a "jack-of-all-trades" kind of tech and while I don't normally learn everything well enough to be good at it, some stuff does eventually sink in.
 			</p>
-			<p>Here's my contact info:</p>
-			<p>
-				<a href="/assets/files/ndegruchy.vcf">
+            <details>
+                <summary>Expand this for my contact info</summary>
+                <figure>
 					<img src="/assets/images/ndegruchy-vcard.png" height="165" width="165" alt="QRCode">
-				</a>
-			</p>
-
+                    <figcaption>You can either take a picture with your smartphone, or download <a href="/assets/files/ndegruchy.vcf">the <abbr title="vCard Format">VCF</abbr> file itself.</a></figcaption>
+                </figure>
+				<p>
+					Need to encrypt something to me? Use <a id="pgp" href="/assets/files/ndegruchy.pgp" rel="me pgpkey authn">my public key</a>.
+				</p>
+            </details>
 			<p>
 				Anyway: Hi!
 			</p>
