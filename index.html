@@ -1,35 +1,3 @@
-<!--
-	Hello!
-
-	I hope you like the site. If you're reading this, then you're
-	likely someone who wants to know how all this *works*, or already
-	does and just want to "peek under the hood". That's
-	good. Generally, my ideal website works like this:
-
-		- Uses as few external resources as possible
-		- Fonts from the system by being as generic as possible
-		- Let the browser handle things. Don't try to reimpose order
-		  where it already exists.
-		- Don't care about old browsers (insofar as shimming features,
-		  or adding markup)
-		- HTML, CSS and only if unimplementable without it, JavaScript
-		- Modern image formats, where appropriate
-		- Reduce "classitis" as it just adds markup bloat
-		- Eliminate "divitis"
-		- Be as DRY as possible
-		- Yes, long selectors are "slower", but I also don't have to
-		  rely on hundreds of classes
-		- Law of least surprise. Things should function as the user
-		  expects them to
-
-	As an informal set of "rules", they're also meant to be broken
-	where appropriate. You do your best, care enough about the user
-	and don't waste cycles on trying to do everything. HTML is a text
-	format, it should degrade nicely.  If it doesn't, you're doing it
-	wrong.
-
--->
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -43,11 +11,6 @@
 	<link rel="alternate" href="https://fosstodon.org/@nathand.rss" type="application/rss+xml">
 
 	<style>
-		/*
-			Inline styles. This section is entirely too small to
-			warrant an additional, even if cheap due to pipelining,
-			request.
-		*/
 		:root {
 			box-sizing: border-box;
 			font-family: "Inter", sans-serif;
@@ -64,41 +27,8 @@
 
 		#masthead h1 { text-align: center; font-size: 3rem }
 
-		#masthead header img {
-			border-radius: 50%;
-			border: 3px solid #fff;
-			display: block;
-			height: 300px;
-			margin: 0 auto 1em auto;
-			width: 300px;
-		}
-
-		summary {
-			cursor: pointer;
-			text-decoration: underline;
-		}
-		details figcaption {
-			line-height: 1rem;
-			font-size: smaller;
-			font-style: italic;
-		}
-	 	figure { margin: 1rem 0; }
-
 		blockquote footer { margin-top: 0.5em }
 	</style>
-
-	<!--
-		# Litany Against Fear
-
-		I must not fear.
-		Fear is the mind-killer.
-		Fear is the little-death that brings total obliteration.
-		I will face my fear.
-		I will permit it to pass over me and through me.
-		And when it has gone past I will turn the inner eye to see its path.
-		Where the fear has gone there will be nothing.
-		Only I will remain. -->
-
 	<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
 </head>
 <body>
@@ -106,43 +36,23 @@
 		<header>
 			<h1>Welcome!</h1>
 		</header>
-		<p>
-			Hello, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet. You can treat this as a sort of a launching page for different services I frequent, or for services I host myself.
-		</p>
+		<p>Hello, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet. You can treat this as a sort of a launching page for different services I frequent, or for services I host myself.</p>
 	</section>
 	<main>
 		<section id="about-me">
 			<header>
-				<h2>
-					<a href="#about-me">About Me</a>
-				</h2>
+				<h2><a href="#about-me">About Me</a></h2>
 			</header>
 			<blockquote>
 				Nathan is a technologist and Open Source enthusiast living and working in Florida. Often, he can be found playing board games with his family, video games by himself or breaking technological things in order to fix them "better".
 				<footer><cite>Me.</cite></footer>
 			</blockquote>
-			<p>
-				Yes, that about does it. I'm kind of an interesting guy in my estimation. I do work that requires me to be a "jack-of-all-trades" kind of tech and while I don't normally learn everything well enough to be good at it, some stuff does eventually sink in.
-			</p>
-			<details>
-				<summary>Expand this for my contact info</summary>
-				<figure>
-					<img src="/assets/images/ndegruchy-vcard.png" height="165" width="165" alt="QRCode">
-					<figcaption>You can either take a picture with your smartphone, or download <a href="/assets/files/ndegruchy.vcf">the <abbr title="vCard Format">VCF</abbr> file itself.</a></figcaption>
-				</figure>
-				<p>
-					Need to encrypt something to me? Use <a id="pgp" href="/assets/files/ndegruchy.pgp">my public key</a>.
-				</p>
-			</details>
-			<p>
-				Anyway: Hi!
-			</p>
+			<p>Yes, that about does it. I'm kind of an interesting guy in my estimation. I do work that requires me to be a "jack-of-all-trades" kind of tech and while I don't normally learn everything well enough to be good at it, some stuff does eventually sink in.</p>
+			<p>Anyway: Hi!</p>
 		</section>
 		<section id="elsewhere">
 			<header>
-				<h2>
-					<a href="#elsewhere">Elsewhere On the Internet</a>
-				</h2>
+				<h2><a href="#elsewhere">Elsewhere On the Internet</a></h2>
 			</header>
 			<p>I also have a <a href="https://gemini.circumlunar.space/">Gemini server</a> running <a href="gemini://degruchy.org/">a rough facsimile</a> of this site.</p>
 			<p>Here's a non-exhaustive list of services I use:</p>
@@ -152,24 +62,14 @@
 				<li><a href="//www.flickr.com/people/nathandegruchy">Flickr</a></li>
 				<li><a href="//www.inaturalist.org/people/3345587">iNaturalist</a></li>
 			</ul>
-			<h3 id="not">
-				<a href="#not">Where <em>Not</em> to Find Me</a>
-			</h3>
-			<p>
-				I prefer to avoid closed social silos, like Twitter, Facebook, Instagram, <em>anywhere</em> on Google or similar.
-			</p>
+			<h3 id="not"><a href="#not">Where <em>Not</em> to Find Me</a></h3>
+			<p>I prefer to avoid closed social silos, like Twitter, Facebook, Instagram, <em>anywhere</em> on Google or similar.</p>
 		</section>
 	</main>
 	<footer id="colophon">
-		<h2>
-			<a href="#colophon">Colophon</a>
-		</h2>
-		<p>
-			Made in an afternoon, in Emacs with at least two cups of coffee in me.
-		</p>
-		<p>
-			If you find any bugs or issues with this site, feel free to <a href="mailto:nathan@degruchy.org">email me</a>.
-		</p>
+		<h2><a href="#colophon">Colophon</a></h2>
+		<p>Made in an afternoon, in Emacs with at least two cups of coffee in me.</p>
+		<p>If you find any bugs or issues with this site, feel free to <a href="mailto:nathan@degruchy.org">email me</a>.</p>
 	</footer>
 </body>
 </html>
