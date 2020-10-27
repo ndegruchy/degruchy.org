@@ -13,7 +13,7 @@
 	<style>
 		:root {
 			box-sizing: border-box;
-			font-family: "Inter", sans-serif;
+			font-family: "-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
 		}
 
 		body {
@@ -28,6 +28,11 @@
 		#masthead h1 { text-align: center; font-size: 3rem }
 
 		blockquote footer { margin-top: 0.5em }
+		@media (prefers-color-scheme: dark) {
+			:root { background-color: #000; color: #FFF; }
+			a { color: #84a98c; }
+			a:visited { color: #cad2c5; }
+		}
 	</style>
 	<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
 </head>
