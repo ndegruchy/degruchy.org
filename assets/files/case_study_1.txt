@@ -1,0 +1,79 @@
+Case Study 1
+
+Eating Our Own Dog Food
+
+by Nathan DeGruchy
+
+2-13 In your own words, define *dogfooding*. Do you think dogfooding is likely to predict product success? Why or why not? When would dogfooding not predict success?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dogfooding is the act of using or consuming your own product or service.
+Certain industry segments can benefit from dogfooding, like operating
+system vendors, SaaS vendors and more. In doing so, they can help find
+and fix problems with their own product faster, as their own internal
+needs will likely be similar to their customers. This, however, does not
+indicate success in a segment. Dogfooding may be a logical use-case, but
+because all businesses have varying needs, the internal pressure from
+the provider's own needs may be way out of alignment with the rest of
+the market.
+
+For example: Just because Microsoft likely has thousands, if not
+millions, of copies of Windows running in it's environment, that alone
+does not indicate that it will be a successful product. The needs, and
+responses from Microsoft, will indicate how successful it will be.
+
+2-14 Explain how this team uses the shared whiteboard to generate minutes. What are the advantages of this technique?
+---------------------------------------------------------------------------------------------------------------------
+
+Using a shared collaborative space to record the minutes of the meeting
+allows users to write their own actions, projects, completions and more.
+This frees up a dedicated user who normally records these sorts of
+things in a typical meeting.
+
+2-15 Explain how this team uses alerts. Summarize the advantages to this team of using alerts.
+----------------------------------------------------------------------------------------------
+
+Alerts in SharePoint and other document management systems allow team
+members to be aware of when documents, folders and other internal
+objects change. This has the advantage of allowing people to continually
+work on their own stuff, but be notified when something that interests
+them, or is critical to their own work is changed.
+
+2-16 Summarize the advantages to this team of using SharePoint.
+---------------------------------------------------------------
+
+SharePoint is like many other document management systems. It allows
+team users to collect shared resources, provides version control, access
+control and alerting (to name a few) features. These features automate
+repetitive and often error-prone tasks, allowing the team to focus on
+working, rather than babysitting a folder full of files.
+
+2-17 Explain how do you think Office 365 Professional contributes to the efficiency of the development team. How might it contribute to the quality of this text?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+It doesn't. At least, not specifically. Office 365 is just one of many
+team management suites and is not singularly unique. Team management
+tools provide valuable assistance in organizing, providing collaboration
+and ultimately assisting teams in working together in different
+locations, at different times or even just through different workflows.
+
+This text, for example, is written in LibreOffice. There are other tools
+like Overleaf, git and more that provide decentralized and centralized
+collaboration tools for teams of varying needs. While the author of this
+text does concede that Office 365 is the more *popular* product on the
+market, it is not always a one-size-fits-all situation.
+
+2-18 Which aspects of Office 365 Professional described here could have value to you when accomplishing student team projects? Explain why they add value compared to what you are currently doing.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+As above, any collaboration tool suite, be it Overleaf, git, ownCloud,
+Slack, Dropbox, Zoho Office, Google Docs *or* Office 365 provide
+sufficient enough team collaboration tools to provide significant value
+in ensuring work is collected, versioned, gated behind permissions and
+accessible to the team. Additionally, many of these tools also provide
+collaboration systems like chat or 'pair' editing. While not strictly
+required, and often underutilized by both students and enterprises
+alike, they do provide value when used correctly.
+
+Value in these systems will be drawn exclusively from how well it is
+implemented and utilized by the team in question.
