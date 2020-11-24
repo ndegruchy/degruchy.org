@@ -39,15 +39,17 @@
 	<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
 	<script>
 		document.addEventListener( "DOMContentLoaded", ( event ) => {
-			var elem = document.getElementById( "name" ),
-				text = "Hello, {{name}}, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.";
+			const elem = document.getElementById( "name" ),
+				  text = "Hello, {{name}}, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.";
 
 			function changeName( person ) {
-				elem.innerHTML = text.replace( "{{name}}", person.trim() );
+				person = person.trim();
+				elem.innerHTML = text.replace( "{{name}}", person );
+				window.localStorage.setItem( "name", person );
 			}
 
-			if ( window.localStorage.getItem( "name" ).trim() ) {
-				changeName(window.localStorage.getItem( "name" ));
+			if ( window.localStorage.getItem( "name" ) ) {
+				changeName( window.localStorage.getItem( "name" ).trim() );
 			}
 			
 			elem.addEventListener( "click", ( event ) => {
@@ -55,7 +57,6 @@
 
 				if ( response.trim() ) {
 					changeName( response );
-					window.localStorage.setItem( "name", response );
 				}
 			});
 		});
