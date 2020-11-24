@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Nathan's little plot of virtual land on the Internet.">
 	<link rel="license" href="/LICENSE.txt">
-	<link rel="icon" href="/assets/images/ndegruchy-new-300.webp" type="image/webp">
+	<link rel="icon" href="/assets/images/ndegruchy-new-64.webp" type="image/webp">
 	<link rel="canonical" href="https://degruchy.org/">
 	<link rel="alternate" href="https://fosstodon.org/@nathand.rss" type="application/rss+xml">
 
@@ -23,6 +23,8 @@
 			padding: 0 10vw 2em 10vw;
 		}
 
+		#name { cursor: pointer }
+		
 		#masthead { margin-bottom: 1.5em }
 
 		#masthead h1 { text-align: center; font-size: 3rem }
@@ -35,13 +37,36 @@
 		}
 	</style>
 	<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
+	<script>
+		document.addEventListener( "DOMContentLoaded", ( event ) => {
+			var elem = document.getElementById( "name" ),
+				text = "Hello, {{name}}, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.";
+
+			function changeName( person ) {
+				elem.innerHTML = text.replace( "{{name}}", person.trim() );
+			}
+
+			if ( window.localStorage.getItem( "name" ).trim() ) {
+				changeName(window.localStorage.getItem( "name" ));
+			}
+			
+			elem.addEventListener( "click", ( event ) => {
+				var response = prompt( "Enter your name:" );
+
+				if ( response.trim() ) {
+					changeName( response );
+					window.localStorage.setItem( "name", response );
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<section id="masthead">
 		<header>
 			<h1>Welcome!</h1>
 		</header>
-		<p>Hello, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.</p>
+		<p id="name">Hello, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.</p>
 	</section>
 	<main>
 		<section id="about-me">
