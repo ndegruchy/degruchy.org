@@ -3,21 +3,17 @@
 	<head>
 		<title>Nathan's Wishlist</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="assets/images/ndegruchy.webp" type="image/webp">
 		<style type="text/css">
 			:root {
-				box-sizing: border-box;
 				font-family: sans-serif;
 				font-size: 1rem;
 			}
 			
 			body {
-				margin: 0 auto;
-				padding: 1em 0;
-				width: 60vw;
+				padding: 0 20vw 2em 20vw;
 			}
 
-			h1 { margin: 0; }
-			
 			table {
 				border-collapse: collapse;
 				width: 100%;
@@ -27,77 +23,468 @@
 				vertical-align: middle;
 			}
 			table tbody tr:hover td { background-color: #fffff0; }
-			table thead {
-				border-bottom: 3px double #000;
-				font-weight: bold;
-			}
+			table thead, table tfoot { font-weight: bold }
+			table thead, table tbody { border-bottom: 3px double #000; }
 			table td:first-child { width: 72px; }
-			table td:first-child img { width: 64px; }
+			table td:first-child img {
+				height: 64px;
+				width: 64px;
+			}
 			table tbody td { border-bottom: 1px solid #EEE; }
-			table tfoot { border-top: 3px double #000; }
+			table caption {
+				caption-side: bottom;
+				padding: 1% 10%;
+			}
+			@media only screen and (max-width: 600px) {
+				table, tbody, th, td, tr, caption { display: block; }
+				table thead { display: none; }
+				table td:first-child {
+					width: unset;
+				}
+				table td img {
+					display: block;
+					margin: 0 auto;
+				}
+				table tbody tr {
+					margin-top: 0.5em;
+					margin-bottom: 0.5em
+				}
+				table tbody td { border-bottom: 0 }
+				table caption { padding: 0; }
+			}
+			@media (prefers-color-scheme: dark) {
+				:root { background-color: #000; color: #FFF; }
+				a { color: #84a98c; }
+				a:visited { color: #cad2c5; }
+			}
+
 		</style>
 	</head>
 	<body>
-		<nav>
-			<header>
-				<h1>Wishlist</h1>
-			</header>
-		</nav>
-		<main>
-			<section id="wishlist">
-				<table>
-					<thead>
-						<tr>
-							<td colspan="2">Name</td>
-							<td>Price</td>
-							<td>Link</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<img src="assets/images/rpi4.webp"
-									 loading="lazy"
-									 height="64" width="64"
-									 alt="A picture of the Raspberry Pi 4">
-							</td>
-							<td>Raspberry Pi 4 4gb</td>
-							<td>$99.99</td>
-							<td>
-								<a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html"
-								   target="_blank"
-								   rel="nofollow external noopener noreferrer">
-									Canakit
-								</A>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img src="assets/images/sm3das.webp"
-									 loading="lazy"
-									 height="64" width="64"
-									 alt="A picture of the Super Mario 3D All-Stars">
-							</td>
-							<td>Super Mario 3D All-Stars</td>
-							<td>$49.95</td>
-							<td>
-								<a href="https://smile.amazon.com/dp/B08G3MN6KP/"
-								   target="_blank"
-								   rel="nofollow external noopener noreferrer">
-									Amazon
-								</a>
-							</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan="4">
-								Prices set at time of recording. They have likely changed. Amazon price history can be tracked using the product link on <a href="https://camelcamelcamel.com/" target="_blank" rel="nofollow external nooopener noreferrer">camelcamelcamel</a>.
-							</td>
-						</tr>
-					</tfoot>
-				</table>
-			</section>
-		</main>
+		<h1>Wishlist</h1>
+		<p>Hello, &#x1F44B;. Welcome to my wishlist. I use this for
+		ideas of what to buy myself, or to send to my relatives to buy
+		me for Christmas or my Birthday. I keep it up-to-date
+		regularly, so make sure you refresh when you're looking to get
+		me something.</p>
+		<table>
+			<thead>
+				<tr>
+					<td colspan="2">Item</td>
+					<td>Price</td>
+					<td>Link</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img src="assets/images/rpi4.webp"
+							 loading="lazy"
+							 alt="A picture of the Raspberry Pi 4">
+					</td>
+					<td>Raspberry Pi 4 4gb</td>
+					<td>$99.99</td>
+					<td>
+						<a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Canakit
+						</A>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/sm3das.webp"
+							 loading="lazy"
+							 alt="A picture of the Super Mario 3D All-Stars">
+					</td>
+					<td>Super Mario 3D All-Stars</td>
+					<td>$49.95</td>
+					<td>
+						<a href="https://store.nintendo.com/super-mario-3d-all-stars-us.html"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Nintendo Shop
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/pmok.webp"
+							 loading="lazy"
+							 alt="A picture of the Super Mario 3D All-Stars">
+					</td>
+					<td>Paper Mario: The Origami King</td>
+					<td>$59.99</td>
+					<td>
+						<a href="https://store.nintendo.com/paper-mario-the-origami-king.html"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Nintendo Shop
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bandcamp.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp gift card">
+					</td>
+					<td>Bandcamp Gift Card</td>
+					<td>$50.00</td>
+					<td>
+						<a href="https://bandcamp.com/gift_cards"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-dollyrots.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Artist Album">
+					</td>
+					<td><i>All I Want for Christmas</i> by The Dollyrots</td>
+					<td>$10.00</td>
+					<td>
+						<a href="https://thedollyrots.bandcamp.com/album/christmas-all-i-want-for-christmas"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-mcwlove.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Artist Album">
+					</td>
+					<td><i>Merry Christmas With Love</i> by The Dirty River Jazz Band</td>
+					<td>$20.00</td>
+					<td>
+						<a href="https://dirtyriverjazzband.bandcamp.com/album/merry-christmas-with-love"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-simplekindxmas.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Artist Album">
+					</td>
+					<td><i>Simple Kind of Christmas</i> by Red Moon Road</td>
+					<td>$20.00 (CAD)</td>
+					<td>
+						<a href="https://redmoonroad.bandcamp.com/album/a-simple-kind-of-christmas"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-merryhyrule.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Artist Album">
+					</td>
+					<td><i>A Merry Hyrule Christmas</i> by Eric Buchholz</td>
+					<td>$20.00</td>
+					<td>
+						<a href="https://ericbuchholz.bandcamp.com/album/a-merry-hyrule-christmas"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/airpods.webp"
+							 loading="lazy"
+							 alt="A picture of a Apple Airpods">
+					</td>
+					<td>Apple AirPods</td>
+					<td>$159.00</td>
+					<td>
+						<a href="https://www.apple.com/shop/product/MV7N2/airpods-with-charging-case"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Apple
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-jazzhopcafe.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Band">
+					</td>
+					<td>Anything from Jazz Hop Cafe</td>
+					<td>Variable</td>
+					<td>
+						<a href="https://jazzhopcafe.bandcamp.com/"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-chimytina.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>A Very Chimytina Christmas</td>
+					<td>$11.99</td>
+					<td>
+						<a href="https://chimytina.bandcamp.com/album/a-very-chimytina-christmas"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-pyjaen.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>PYJÆN</td>
+					<td>£7.99</td>
+					<td>
+						<a href="https://pyjaen.bandcamp.com/album/pyj-n"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-flowfilz.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Transit</td>
+					<td>€9.99</td>
+					<td>
+						<a href="https://flofilzmpm.bandcamp.com/album/transit"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-styley-v2.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Styley Volume 2</td>
+					<td>¥1,300</td>
+					<td>
+						<a href="https://loquartz.bandcamp.com/album/styley-vol-2"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-styley-v3.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Styley Volume 3</td>
+					<td>¥1,800</td>
+					<td>
+						<a href="https://loquartz.bandcamp.com/album/styley-vol-3"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-styley-v4.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Styley Volume 4</td>
+					<td>¥1,800</td>
+					<td>
+						<a href="https://loquartz.bandcamp.com/album/styley-vol-4"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-typer510.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Type-R: 510</td>
+					<td>$12.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/type-r-510"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-future-groove.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Future Grove Product</td>
+					<td>$7.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/future-groove-product"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-cham.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Cham!</td>
+					<td>$7.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/cham"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-love4you.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Love 4 You</td>
+					<td>$2.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/love-4-you"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-2014-2016.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>2014-2016</td>
+					<td>$2.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/2014-2016"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-repak4.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>RE PAK 4</td>
+					<td>$10.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/re-pak-4"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/bc-ncr-sailorwaveII.webp"
+							 loading="lazy"
+							 alt="A picture of a Bandcamp Album">
+					</td>
+					<td>Sailorwave II</td>
+					<td>$2.00</td>
+					<td>
+						<a href="https://neoncityrecords.bandcamp.com/album/sailorwave-ii"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							Bandcamp
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/fsf-35-poster.webp"
+							 loading="lazy"
+							 alt="A picture of a the FSF 35 Year Anniversary Poster">
+					</td>
+					<td>FSF 35th Anniversary Poster</td>
+					<td>$35.00</td>
+					<td>
+						<a href="https://shop.fsf.org/wall-art/fsf-35th-anniversary-poster"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							FSF Shop
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assets/images/fsf-emacs-deluxe.webp"
+							 loading="lazy"
+							 alt="A picture of a the FSF Emacs de Luxe Bundle">
+					</td>
+					<td>Emacs de Luxe Bundle</td>
+					<td>$100.00</td>
+					<td>
+						<a href="https://shop.fsf.org/tshirts-hoodies/emacs-de-luxe-bundle"
+						   target="_blank"
+						   rel="nofollow external noopener noreferrer">
+							FSF Shop
+						</a>
+					</td>
+				</tr>
+			</tbody>
+			<caption>
+				<p>
+					Prices set at time of recording.
+				</p>
+				<p>
+					Amazon should be avoided, if at all possible.
+				</p>
+			</caption>
+		</table>
 	</body>
 </html>

@@ -1,105 +1,106 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-	<base href="https://degruchy.org/">
+	<head>
+		<base href="https://degruchy.org/">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Nathan's little plot of virtual land on the Internet.">
-	<link rel="license" href="/LICENSE.txt">
-	<link rel="icon" href="/assets/images/ndegruchy-new-64.webp" type="image/webp">
-	<link rel="canonical" href="https://degruchy.org/">
-	<link rel="alternate" href="https://fosstodon.org/@nathand.rss" type="application/rss+xml">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nathan's little plot of virtual land on the Internet.">
+		<link rel="license" href="/LICENSE.txt">
+		<link rel="icon" href="/assets/images/ndegruchy-new-64.webp" type="image/webp">
+		<link rel="canonical" href="https://degruchy.org/">
+		<link rel="alternate" href="https://fosstodon.org/@nathand.rss" type="application/rss+xml">
 
-	<style>
-		:root {
-			box-sizing: border-box;
-			font-family: sans-serif;
-		}
-
-		body {
-			font-size: 1.25rem;
-			line-height: 2.1rem;
-			margin: 0;
-			padding: 0 10vw 2em 10vw;
-		}
-
-		#name { cursor: pointer }
-		
-		#masthead { margin-bottom: 1.5em }
-
-		#masthead h1 { text-align: center; font-size: 3rem }
-
-		blockquote footer { margin-top: 0.5em }
-		@media (prefers-color-scheme: dark) {
-			:root { background-color: #000; color: #FFF; }
-			a { color: #84a98c; }
-			a:visited { color: #cad2c5; }
-		}
-	</style>
-	<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
-	<script>
-		document.addEventListener( "DOMContentLoaded", ( event ) => {
-			const elem = document.getElementById( "name" ),
-				  text = "Hello, {{name}}, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.";
-
-			function changeName( person ) {
-				person = person.trim();
-				elem.innerHTML = text.replace( "{{name}}", person );
-				window.localStorage.setItem( "name", person );
+		<style>
+			:root {
+				box-sizing: border-box;
+				font-family: sans-serif;
 			}
 
-			if ( window.localStorage.getItem( "name" ) ) {
-				changeName( window.localStorage.getItem( "name" ).trim() );
+			body {
+				font-size: 1.25rem;
+				line-height: 2.1rem;
+				margin: 0;
+				padding: 0 10vw 2em 10vw;
 			}
+
+			#name { cursor: pointer }
 			
-			elem.addEventListener( "click", ( event ) => {
-				var response = prompt( "Enter your name:" );
+			#masthead { margin-bottom: 1.5em }
 
-				if ( response.trim() ) {
-					changeName( response );
+			#masthead h1 { text-align: center; font-size: 3rem }
+
+			blockquote footer { margin-top: 0.5em }
+			@media (prefers-color-scheme: dark) {
+				:root { background-color: #000; color: #FFF; }
+				a { color: #84a98c; }
+				a:visited { color: #cad2c5; }
+			}
+		</style>
+		<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
+		<script>
+			document.addEventListener( "DOMContentLoaded", ( event ) => {
+				const elem = document.getElementById( "name" ),
+					  text = "Hello, {{name}}, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.";
+
+				function changeName( person ) {
+					person = person.trim();
+					elem.innerHTML = text.replace( "{{name}}", person );
+					window.localStorage.setItem( "name", person );
 				}
+
+				if ( window.localStorage.getItem( "name" ) ) {
+					changeName( window.localStorage.getItem( "name" ).trim() );
+				}
+				
+				elem.addEventListener( "click", ( event ) => {
+					var response = prompt( "Enter your name:" );
+
+					if ( response.trim() ) {
+						changeName( response );
+					}
+				});
 			});
-		});
-	</script>
-</head>
-<body>
-	<section id="masthead">
-		<header>
-			<h1>Welcome!</h1>
-		</header>
-		<p id="name">Hello, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.</p>
-	</section>
-	<main>
-		<section id="about-me">
+		</script>
+	</head>
+	<body>
+		<section id="masthead">
 			<header>
-				<h2><a href="#about-me">About Me</a></h2>
+				<h1>Welcome!</h1>
 			</header>
-			<blockquote>
-				Nathan is a technologist and Open Source enthusiast living and working in Florida. Often, he can be found playing board games with his family, video games by himself or breaking technological things in order to fix them "better".
-				<footer><cite>Me.</cite></footer>
-			</blockquote>
-			<p>Yes, that about does it. I'm kind of an interesting guy in my estimation. I do work that requires me to be a "jack-of-all-trades" kind of tech and while I don't normally learn everything well enough to be good at it, some stuff does eventually sink in.</p>
-			<p>Anyway: Hi!</p>
+			<p id="name">Hello, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.</p>
 		</section>
-		<section id="elsewhere">
-			<header>
-				<h2><a href="#elsewhere">Elsewhere On the Internet</a></h2>
-			</header>
-			<p>I also <a href="/notes/">have some notes you can read</a>, and a <a href="//gemini.circumlunar.space/">Gemini server</a> running <a href="gemini://degruchy.org/">a rough facsimile</a> of this site.</p>
-			<p>Here's a non-exhaustive list of services I use:</p>
-			<ul>
-				<li><a href="//fosstodon.org/@nathand">Fosstodon (Mastodon)</a></li>
-				<li><a href="//www.flickr.com/people/nathandegruchy">Flickr</a></li>
-				<li><a href="//www.inaturalist.org/people/3345587">iNaturalist</a></li>
-			</ul>
-			<h3 id="not"><a href="#not">Where <em>Not</em> to Find Me</a></h3>
-			<p>I prefer to avoid closed social silos, like Twitter, Facebook, Instagram, <em>anywhere</em> on Google or similar.</p>
-		</section>
-	</main>
-	<footer id="colophon">
-		<h2><a href="#colophon">Colophon</a></h2>
-		<p>Made in an afternoon, in Emacs with at least two cups of coffee in me.</p>
-		<p>If you find any bugs or issues with this site, feel free to <a href="mailto:nathan@degruchy.org">email me</a>.</p>
-	</footer>
-</body>
+		<main>
+			<section id="about-me">
+				<header>
+					<h2><a href="#about-me">About Me</a></h2>
+				</header>
+				<blockquote>
+					Nathan is a technologist and Open Source enthusiast living and working in Florida. Often, he can be found playing board games with his family, video games by himself or breaking technological things in order to fix them "better".
+					<footer><cite>Me.</cite></footer>
+				</blockquote>
+				<p>Yes, that about does it. I'm kind of an interesting guy in my estimation. I do work that requires me to be a "jack-of-all-trades" kind of tech and while I don't normally learn everything well enough to be good at it, some stuff does eventually sink in.</p>
+				<p>Anyway: Hi!</p>
+			</section>
+			<section id="elsewhere">
+				<header>
+					<h2><a href="#elsewhere">Elsewhere On the Internet</a></h2>
+				</header>
+				<p>I also <a href="/notes/">have some notes you can read</a>, a <a href="/wishlist/">neat wishlist you can buy stuff for me from</a>, and a <a href="//gemini.circumlunar.space/">Gemini server</a> running <a href="gemini://degruchy.org/">a rough facsimile</a> of this site.</p>
+				<p>Here's a non-exhaustive list of services I use:</p>
+				<ul>
+					<li><a href="//fosstodon.org/@nathand">Fosstodon (Mastodon)</a></li>
+					<li><a href="//www.flickr.com/people/nathandegruchy">Flickr</a></li>
+					<li><a href="//www.inaturalist.org/people/3345587">iNaturalist</a></li>
+					<li><a href="//git.sr.ht/~ndegruchy/">My code respositories</a></li>
+				</ul>
+				<h3 id="not"><a href="#not">Where <em>Not</em> to Find Me</a></h3>
+				<p>I prefer to avoid closed social silos, like Twitter, Facebook, Instagram, <em>anywhere</em> on Google or similar.</p>
+			</section>
+		</main>
+		<footer id="colophon">
+			<h2><a href="#colophon">Colophon</a></h2>
+			<p>Made in an afternoon, in Emacs with at least two cups of coffee in me.</p>
+			<p>If you find any bugs or issues with this site, feel free to <a href="mailto:nathan@degruchy.org">email me</a>.</p>
+		</footer>
+	</body>
 </html>
