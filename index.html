@@ -36,30 +36,6 @@
 			}
 		</style>
 		<title>Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
-		<script>
-			document.addEventListener( "DOMContentLoaded", ( event ) => {
-				const elem = document.getElementById( "name" ),
-					  text = "Hello, {{name}}, &#x1F44B; I'm Nathan DeGruchy. This is my little plot of virtual land on the Internet.";
-
-				function changeName( person ) {
-					person = person.trim();
-					elem.innerHTML = text.replace( "{{name}}", person );
-					window.localStorage.setItem( "name", person );
-				}
-
-				if ( window.localStorage.getItem( "name" ) ) {
-					changeName( window.localStorage.getItem( "name" ).trim() );
-				}
-				
-				elem.addEventListener( "click", ( event ) => {
-					var response = prompt( "Enter your name:" );
-
-					if ( response.trim() ) {
-						changeName( response );
-					}
-				});
-			});
-		</script>
 	</head>
 	<body>
 		<section id="masthead">
