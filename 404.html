@@ -7,16 +7,20 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="Nathan's little plot of virtual land on the Internet.">
 		<link rel="license" href="/LICENSE.txt">
-		<link rel="icon" href="/assets/images/ndegruchy-new-64.png" type="image/webp">
+		<link rel="icon" href="/assets/images/logo.png" type="image/webp">
 		<link rel="canonical" href="https://degruchy.org/">
 		<link rel="alternate" href="https://fosstodon.org/@nathand.rss" type="application/rss+xml">
 
 		<style>
 			:root {
+				--background-color: rgb(253, 249, 237);
+				--foreground-color: rgb(21, 37, 60);
+				--link-color: rgb(196, 81, 49);
+				--hover-color: rgb(203, 139, 177);
 				box-sizing: border-box;
-				background-color: #333;
-				color: #fffff0;
-				font-family: sans-serif;
+				background-color: var(--background-color);
+				color: var(--foreground-color);
+				font-family: "Cambria", "Georgia", "Times", "Times New Roman", serif;
 			}
 
 			body {
@@ -25,11 +29,41 @@
 			}
 
 			a {
-				color: #e49588;
+				color: var(--link-color);
+			}
+			a:hover {
+				color: var(--hover-color);
 			}
 
 			#masthead { margin-bottom: 1.5em }
-			#masthead h1 { text-align: center; font-size: 3rem }
+			#masthead header {
+				background-image: url("/assets/images/logo.png");
+				background-position: 50% 60%;
+				background-repeat: no-repeat;
+				height: 250px;
+			}
+			#masthead h1 {
+				text-align: center;
+				font-size: 3rem;
+				font-family: "Trebuchet", "Tahoma", "Arial", sans-serif
+			}
+
+			blockquote:before {
+				content: "\201C";
+				display: block;
+				float: left;
+				font-size: 64pt;
+				line-height: 0.75em;
+				margin-right: 0.25em;
+			}
+			blockquote {
+				background-color: var(--foreground-color);
+				color: var(--background-color);
+				padding: 1em;
+				border-radius: 5px;
+				box-shadow: 0px 3px 3px #CCC
+			}
+			blockquote footer { margin-top: 0.5em }
 		</style>
 
 		<title>404 - Verily at DeGruchy.org - Home of Nathan DeGruchy</title>
